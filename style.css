@@ -1,0 +1,118 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: white;
+    }
+
+    .hero {
+      position: relative;
+      background-color: #008060;
+      color: white;
+      padding: 60px 20px 180px; /* Espacio extra para las imágenes */
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero svg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+    }
+
+    .logo {
+      width: 100px;
+      margin-bottom: 70px;
+    }
+
+    h1 {
+      font-size: 38px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 10px 0 20px;
+    }
+
+    .email-input {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+
+    input[type="email"] {
+      padding: 12px 15px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      min-width: 280px;
+    }
+
+    .cta-button {
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .cta-button:hover {
+      background-color: #333;
+    }
+
+    .subtext {
+      font-size: 12px;
+      max-width: 500px;
+      margin: 10px auto 30px;
+    }
+
+    .images {
+      position: relative;
+      margin-top: -160px;
+      text-align: center;
+    }
+
+    .laptop {
+      width: 600px;
+      max-width: 90%;
+      z-index: 2;
+      position: relative;
+    }
+
+    .phone {
+      position: absolute;
+      left: 32%;
+      bottom: 60px;
+      width: 160px;
+      z-index: 3;
+    }
+
+    .glasses {
+      position: absolute;
+      top: 45px;
+      right: 30%;
+      bottom: 90px;
+      width: 220px;
+      z-index: 3;
+    }
+
+    .plant {
+      position: absolute;
+      right: 30%;
+      bottom: 0;
+      width: 200px;
+      z-index: 0;
+    }
