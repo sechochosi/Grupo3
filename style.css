@@ -1,132 +1,138 @@
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      background-color: white;
-    }
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: white;
+}
 
-    .hero {
-      position: relative;
-      background-color: #008060;
-      color: white;
-      padding: 60px 20px 180px; /* Espacio extra para las imágenes */
-      text-align: center;
-      overflow: hidden;
-    }
+.hero {
+  position: relative;
+  background-color: #008060;
+  color: white;
+  padding: 60px 20px 180px; /* Extra space for images */
+  text-align: center;
+  overflow: hidden;
+}
 
-    .hero svg {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: auto;
-    }
+.hero svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
 
-    .logo {
-      width: 100px;
-      margin-bottom: 70px;
-    }
+.logo {
+  width: 100px;
+  margin-bottom: 70px;
+}
 
-    h1 {
-      font-size: 38px;
-      font-weight: bold;
-      margin: 10px 0;
-    }
+h1 {
+  font-size: 38px;
+  font-weight: bold;
+  margin: 10px 0;
+}
 
-    p {
-      font-size: 18px;
-      margin: 10px 0 20px;
-    }
+p {
+  font-size: 18px;
+  margin: 10px 0 20px;
+}
 
-    .email-input {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-bottom: 15px;
-    }
+.email-input {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
 
-    input[type="email"] {
-      padding: 12px 15px;
-      border: none;
-      border-radius: 4px;
-      font-size: 16px;
-      min-width: 280px;
-    }
+input[type="email"] {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  min-width: 280px;
+  width: 100%; /* Make it full width on smaller screens */
+  max-width: 350px; /* Limit max width for larger screens */
+}
 
-    .cta-button {
-      background-color: black;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      padding: 12px 24px;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-    }
+.cta-button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%; /* Make it full width on smaller screens */
+  max-width: 350px; /* Limit max width for larger screens */
+}
 
-    .cta-button:hover {
-      background-color: #333;
-    }
+.cta-button:hover {
+  background-color: #333;
+}
 
-    .subtext {
-      font-size: 12px;
-      max-width: 500px;
-      margin: 10px auto 30px;
-    }
+.subtext {
+  font-size: 12px;
+  max-width: 500px;
+  margin: 10px auto 30px;
+}
 
-    .images {
-      position: relative;
-      margin-top: -160px;
-      text-align: center;
-    }
+.images {
+  position: relative;
+  margin-top: -160px;
+  text-align: center;
+}
 
-    .laptop {
-      width: 600px;
-      max-width: 90%;
-      z-index: 2;
-      position: relative;
-    }
+.laptop {
+  width: 600px;
+  max-width: 90%;
+  z-index: 2;
+  position: relative;
+}
 
-    .phone {
-      position: absolute;
-      left: 32%;
-      bottom: 60px;
-      width: 160px;
-      z-index: 3;
-    }
+.phone {
+  position: absolute;
+  left: 32%;
+  bottom: 60px;
+  width: 160px;
+  z-index: 3;
+}
 
-    .glasses {
-      position: absolute;
-      top: 45px;
-      right: 30%;
-      bottom: 90px;
-      width: 220px;
-      z-index: 3;
-    }
+.glasses {
+  position: absolute;
+  top: 45px;
+  right: 30%;
+  bottom: 90px;
+  width: 220px;
+  z-index: 3;
+}
 
-    .plant {
-      position: absolute;
-      right: 30%;
-      bottom: 0;
-      width: 200px;
-      z-index: 0;
-    }
+.plant {
+  position: absolute;
+  right: 30%;
+  bottom: 0;
+  width: 200px;
+  z-index: 0;
+}
 
-    .features {
+.features {
   display: flex;
   justify-content: center;
   gap: 40px;
   padding: 50px 20px;
   background-color: #f8f8f8;
+  flex-wrap: wrap; /* Allow features to wrap on smaller screens */
 }
 
 .feature {
   max-width: 250px;
+  text-align: center; /* Center text for features */
 }
 
 .feature img {
@@ -146,13 +152,13 @@
   padding: 30px 0;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+  flex-wrap: wrap; /* Allow logos to wrap */
 }
 
 .logos img {
   height: 30px;
+  margin: 10px; /* Add some margin for spacing on smaller screens */
 }
-
-
 
 .quote {
   display: flex;
@@ -164,10 +170,9 @@
   font-style: italic;
   max-width: 800px;
   margin: auto;
-  min-height: 200px; /* para darle espacio vertical */
+  min-height: 200px;
   text-align: center;
 }
-
 
 .quote span {
   display: block;
@@ -194,4 +199,148 @@
 
 .button-container button:hover {
   background-color: #00664d;
+}
+
+@media (max-width: 768px) {
+  /* Reduce el tamaño del título para pantallas medianas */
+  h1 {
+    font-size: 30px;
+  }
+
+  /* Reduce el tamaño del párrafo para mejorar lectura en pantallas medianas */
+  p {
+    font-size: 16px;
+  }
+
+  /* Ajusta el margen superior de las imágenes para evitar corte visual */
+  .images {
+    margin-top: -100px;
+  }
+
+  /* Escala la imagen del laptop al 90% del ancho disponible */
+  .laptop {
+    width: 90%;
+  }
+
+  /* Reubica y reduce la imagen del teléfono para adaptarse a pantallas más estrechas */
+  .phone {
+    left: 10%;
+    bottom: 20px;
+    width: 120px;
+  }
+
+  /* Reubica y reduce la imagen de los lentes */
+  .glasses {
+    top: 20px;
+    right: 10%;
+    width: 150px;
+  }
+
+  /* Reubica y reduce la planta para evitar solapamientos */
+  .plant {
+    right: 5%;
+    bottom: -20px;
+    width: 150px;
+  }
+
+  /* Cambia el layout de características de fila a columna */
+  .features {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  /* Ajusta el ancho de cada bloque de característica */
+  .feature {
+    max-width: 90%;
+  }
+
+  /* Reduce el espacio entre logos y ajusta sus dimensiones */
+  .logos {
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .logos img {
+    height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Reduce el espacio inferior del hero para móviles */
+  .hero {
+    padding-bottom: 120px;
+  }
+
+  /* Reduce tamaño del logo y margen para optimizar espacio */
+  .logo {
+    width: 80px;
+    margin-bottom: 50px;
+  }
+
+  /* Disminuye tamaño del título */
+  h1 {
+    font-size: 24px;
+  }
+
+  /* Disminuye tamaño de texto del párrafo */
+  p {
+    font-size: 14px;
+  }
+
+  /* Ajusta margen superior del contenedor de imágenes */
+  .images {
+    margin-top: -60px;
+  }
+
+  /* Escala laptop para ocupar casi todo el ancho */
+  .laptop {
+    width: 95%;
+  }
+
+  /* Reposiciona y escala el teléfono */
+  .phone {
+    left: 5%;
+    bottom: 10px;
+    width: 90px;
+  }
+
+  /* Reposiciona y reduce lentes */
+  .glasses {
+    top: 10px;
+    right: 5%;
+    width: 100px;
+  }
+
+  /* Reposiciona y reduce planta */
+  .plant {
+    right: 0;
+    bottom: -30px;
+    width: 100px;
+  }
+
+  /* Pone el input y el botón en columna para móviles */
+  .email-input {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Ajusta el ancho del input y botón para pantallas pequeñas */
+  input[type="email"],
+  .cta-button {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  /* Ajuste de tamaño y espaciado de la cita/testimonio */
+  .quote {
+    font-size: 1em;
+    padding: 40px 15px;
+    min-height: auto;
+  }
+
+  /* Reduce márgenes del contenedor de botones */
+  .button-container {
+    margin: 20px 0 40px;
+  }
 }
